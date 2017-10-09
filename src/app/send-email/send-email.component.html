@@ -1,0 +1,38 @@
+
+<form class="formwidth" (ngSubmit)="onSubmit()" #myForm="ngForm">
+  <h3>Send Request Form</h3>
+  <table class="fullwidth" cellspacing="0">
+    <tr>
+      <td>
+        <md-input-container class="fullwidth">
+          <input  mdInput placeholder="To" id="to" [(ngModel)]="sendEmail.to" name="to">
+        </md-input-container>
+      </td>
+
+      <td>
+        <md-input-container class="fullwidth">
+          <input mdInput placeholder="From" id="from" [(ngModel)]="sendEmail.from" name="from">
+        </md-input-container>
+      </td>
+
+      <td>
+        <md-input-container class="fullwidth">
+          <input mdInput placeholder="Subject" id="subject" [(ngModel)]="sendEmail.subject" name="subject">
+        </md-input-container>
+      </td>
+
+      <td>
+        <md-input-container class="fullwidth">
+          <input mdInput placeholder="Subject" id="subject" [(ngModel)]="sendEmail.subject" name="subject">
+        </md-input-container>
+      </td>
+
+
+    </tr>
+  </table>
+
+
+      <h4> <button (click)="sendEmail()">Send Email via Cloud Function</button></h4>
+
+
+
